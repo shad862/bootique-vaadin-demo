@@ -8,17 +8,11 @@
     <artifactId>bootique-vaadin-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <parent>
-        <groupId>io.bootique.modules.parent</groupId>
-        <artifactId>bootique-modules-parent</artifactId>
-        <version>1.1</version>
-    </parent>
-
     <properties>
-        <bootique.version>${project.version}</bootique.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <vaadin.version>14.0.5</vaadin.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <bootique.version>1.1</bootique.version>
+        <vaadin.version>14.1.3</vaadin.version>
         <jetty.version>9.4.19.v20190610</jetty.version>
     </properties>
 
@@ -26,7 +20,7 @@
         <dependency>
             <groupId>io.bootique.bom</groupId>
             <artifactId>bootique-bom</artifactId>
-            <version>1.0.RC1</version>
+            <version>${bootique.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -49,6 +43,5 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
 
 </project>

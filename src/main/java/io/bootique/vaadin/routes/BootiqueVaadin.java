@@ -1,4 +1,4 @@
-package routes;
+package io.bootique.vaadin.routes;
 
 import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.button.Button;
@@ -11,8 +11,7 @@ import com.vaadin.flow.router.Route;
 @PageTitle("BootiqueVaadin")
 public class BootiqueVaadin extends VerticalLayout {
     public BootiqueVaadin() {
-        Button button = new Button("Click me",
-                event -> Notification.show("Clicked!"));
+        Button button = new Button("Click me", event -> Notification.show("Clicked!"));
         add(button);
         add(new Text("Bootique With Vaadin"));
     }
